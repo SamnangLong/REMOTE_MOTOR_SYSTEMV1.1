@@ -32,7 +32,7 @@ function BTN_FORWARD() {
     intervalIdForward = setTimeout(() => {
         isForward = false; // Update forward to '0' after 2 seconds
         publishMessage(); // Publish the message with forward set to '0'
-    },1000);
+    },2000);
 }
 
 function BTN_REVERSE() {
@@ -42,7 +42,7 @@ function BTN_REVERSE() {
     intervalIdREVERSE = setTimeout(() => {
         isREVERSE = false; // Update REVERSE to '0' after 2 seconds
         publishMessage(); // Publish the message with REVERSE set to '0'
-    },1000);
+    },2000);
 }
 
 function BTN_STOP() {
@@ -52,7 +52,7 @@ function BTN_STOP() {
     intervalIdMSTOP = setTimeout(() => {
         isMSTOP = false; // Update MSTOP to '0' after 2 seconds
         publishMessage(); // Publish the message with STOP set to '0'
-    },1000);
+    },2000);
 }
 
 function BTN_RELAY1() {
