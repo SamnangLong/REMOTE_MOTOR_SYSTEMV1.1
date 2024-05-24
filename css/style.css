@@ -369,11 +369,7 @@ body{
 
 
 /* ---BUTTON FORWARD--- */
-.btn_forward button{
-    height: 35px;
-    width: 110px;
-}
-.button-forward-pushable {
+.btn_forward button {
     position: relative;
     border: none;
     background: transparent;
@@ -382,10 +378,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-forward-shadow {
+}
+   
+.btn_forward .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -395,12 +391,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-.button-forward-edge {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.btn_forward .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -408,70 +404,69 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-forward-front {
-    display: block;
+       to left,
+       hsl(130deg 100% 12%) 0%,
+       hsl(150deg 100% 25%) 8%,
+       hsl(150deg 100% 25%) 92%,
+       hsl(130deg 100% 12%) 100%
+     );
+}
+   
+.btn_forward .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
-    background: hsl(345deg 100% 47%);
+    background: hsl(130deg 100% 32%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-forward-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-forward-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.btn_forward button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-forward-pushable:hover .button-forward-front {
+}
+   
+.btn_forward button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-forward-pushable:active .button-forward-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.btn_forward button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-forward-pushable:hover .button-forward-shadow {
+}
+   
+.btn_forward button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-forward-pushable:active .button-forward-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.btn_forward button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-forward-pushable:focus:not(:focus-visible) {
+}
+   
+.btn_forward button:focus:not(:focus-visible) {
     outline: none;
 }
+
+
 
 /* ---BUTTON REVERSE--- */
-.btn_reverse button{
-    height: 35px;
-    width: 110px;
-}
-.button-reverse-pushable {
+.btn_reverse button {
     position: relative;
     border: none;
     background: transparent;
@@ -480,10 +475,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-reverse-shadow {
+}
+   
+.btn_reverse .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -493,12 +488,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-.button-reverse-edge {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.btn_reverse .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -506,70 +501,68 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-reverse-front {
-    display: block;
+       to left,
+       hsl(130deg 100% 12%) 0%,
+       hsl(150deg 100% 25%) 8%,
+       hsl(150deg 100% 25%) 92%,
+       hsl(130deg 100% 12%) 100%
+     );
+}
+   
+.btn_reverse .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
-    background: hsl(345deg 100% 47%);
+    background: hsl(130deg 100% 32%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-reverse-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-reverse-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.btn_reverse button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-reverse-pushable:hover .button-reverse-front {
+}
+   
+.btn_reverse button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-reverse-pushable:active .button-reverse-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.btn_reverse button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-reverse-pushable:hover .button-reverse-shadow {
+}
+   
+.btn_reverse button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-reverse-pushable:active .button-reverse-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.btn_reverse button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-reverse-pushable:focus:not(:focus-visible) {
+}
+   
+.btn_reverse button:focus:not(:focus-visible) {
     outline: none;
 }
+
 
 /* ---BUTTON STOP--- */
-.bottom_btn button{
-    height: 35px;
-    width: 110px;
-}
-.button-stop-pushable {
+.bottom_btn button {
     position: relative;
     border: none;
     background: transparent;
@@ -578,10 +571,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-stop-shadow {
+}
+   
+.bottom_btn .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -591,12 +584,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-.button-stop-edge {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.bottom_btn .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -604,69 +597,69 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-stop-front {
-    display: block;
+       to left,
+       hsl(340deg 100% 16%) 0%,
+       hsl(340deg 100% 32%) 8%,
+       hsl(340deg 100% 32%) 92%,
+       hsl(340deg 100% 16%) 100%
+     );
+}
+   
+.bottom_btn .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
     background: hsl(345deg 100% 47%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-stop-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-stop-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.bottom_btn button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-stop-pushable:hover .button-stop-front {
+}
+   
+.bottom_btn button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-stop-pushable:active .button-stop-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.bottom_btn button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-stop-pushable:hover .button-stop-shadow {
+}
+   
+.bottom_btn button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-stop-pushable:active .button-stop-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.bottom_btn button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-stop-pushable:focus:not(:focus-visible) {
+}
+   
+.bottom_btn button:focus:not(:focus-visible) {
     outline: none;
 }
 
-/* ---BUTTON RELAY1--- */
-.button_relay1 button{
-    height: 35px;
-    width: 110px;
-}.button-relay1-pushable {
+
+
+/* ---BUTTON FORWARD--- */
+.button_relay1 button {
     position: relative;
     border: none;
     background: transparent;
@@ -675,10 +668,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-relay1-shadow {
+}
+   
+.button_relay1 .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -688,12 +681,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-.button-relay1-edge {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.button_relay1 .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -701,69 +694,69 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-relay1-front {
-    display: block;
+       to left,
+       hsl(130deg 100% 12%) 0%,
+       hsl(150deg 100% 25%) 8%,
+       hsl(150deg 100% 25%) 92%,
+       hsl(130deg 100% 12%) 100%
+     );
+}
+   
+.button_relay1 .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
-    background: hsl(345deg 100% 47%);
+    background: hsl(130deg 100% 32%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-relay1-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-relay1-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.button_relay1 button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-relay1-pushable:hover .button-relay1-front {
+}
+   
+.button_relay1 button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-relay1-pushable:active .button-relay1-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_relay1 button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-relay1-pushable:hover .button-relay1-shadow {
+}
+   
+.button_relay1 button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-relay1-pushable:active .button-relay1-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_relay1 button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-relay1-pushable:focus:not(:focus-visible) {
+}
+   
+.button_relay1 button:focus:not(:focus-visible) {
     outline: none;
 }
 
-/* ---BUTTON RELAY2--- */
-.button_relay2 button{
-    height: 35px;
-    width: 110px;
-}.button-relay2-pushable {
+
+
+/* ---BUTTON REVERSE--- */
+.button_relay2 button {
     position: relative;
     border: none;
     background: transparent;
@@ -772,10 +765,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-relay2-shadow {
+}
+   
+.button_relay2 .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -785,12 +778,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-.button-relay2-edge {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.button_relay2 .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -798,71 +791,68 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-relay2-front {
-    display: block;
+       to left,
+       hsl(130deg 100% 12%) 0%,
+       hsl(150deg 100% 25%) 8%,
+       hsl(150deg 100% 25%) 92%,
+       hsl(130deg 100% 12%) 100%
+     );
+}
+   
+.button_relay2 .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
-    background: hsl(345deg 100% 47%);
+    background: hsl(130deg 100% 32%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-relay2-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-relay2-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.button_relay2 button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-relay2-pushable:hover .button-relay2-front {
+}
+   
+.button_relay2 button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-relay2-pushable:active .button-relay2-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_relay2 button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-relay2-pushable:hover .button-relay2-shadow {
+}
+   
+.button_relay2 button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-relay2-pushable:active .button-relay2-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_relay2 button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-relay2-pushable:focus:not(:focus-visible) {
+}
+   
+.button_relay2 button:focus:not(:focus-visible) {
     outline: none;
 }
 
 
-/* ---BUTTON STOP ALL RELAY--- */
-.button_stopall button{
-    height: 35px;
-    width: 110px;
-}
-.button-stopall-pushable {
+/* ---BUTTON STOP--- */
+.button_stopall button {
     position: relative;
     border: none;
     background: transparent;
@@ -871,10 +861,10 @@ body{
     outline-offset: 4px;
     transition: filter 250ms;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
-}  
-.button-stopall-shadow {
+}
+   
+.button_stopall .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -884,12 +874,12 @@ body{
     background: hsl(0deg 0% 0% / 0.25);
     will-change: transform;
     transform: translateY(2px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
 }
-.button-stopall-edge {
+   
+.button_stopall .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -897,64 +887,64 @@ body{
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-}  
-.button-stopall-front {
-    display: block;
+       to left,
+       hsl(340deg 100% 16%) 0%,
+       hsl(340deg 100% 32%) 8%,
+       hsl(340deg 100% 32%) 92%,
+       hsl(340deg 100% 16%) 100%
+     );
+}
+   
+.button_stopall .front {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 6.5px 0px;
+    height: 35px;
+    width: 110px;
     border-radius: 12px;
-    font-size: 17px;
+    font-size: 1.1rem;
     color: white;
     background: hsl(345deg 100% 47%);
     will-change: transform;
     transform: translateY(-4px);
-    transition:
-      transform
-      600ms
-      cubic-bezier(.3, .7, .4, 1);
-}  
-@media (min-width: 768px) {
-    .button-stopall-front {
-      font-size: 1.25rem;
-      padding: 12px 42px;
-    }
-}  
-.button-stopall-pushable:hover {
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+   
+.button_stopall button:hover {
     filter: brightness(110%);
-    -webkit-filter: brightness(110%);
-}  
-.button-stopall-pushable:hover .button-stopall-front {
+}
+   
+.button_stopall button:hover .front {
     transform: translateY(-6px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-stopall-pushable:active .button-stopall-front {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_stopall button:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
-}  
-.button-stopall-pushable:hover .button-stopall-shadow {
+}
+   
+.button_stopall button:hover .shadow {
     transform: translateY(4px);
-    transition:
-      transform
-      250ms
-      cubic-bezier(.3, .7, .4, 1.5);
-}  
-.button-stopall-pushable:active .button-stopall-shadow {
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+   
+.button_stopall button:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-}  
-.button-stopall-pushable:focus:not(:focus-visible) {
+}
+   
+.button_stopall button:focus:not(:focus-visible) {
     outline: none;
 }
-
 
 
 

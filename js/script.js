@@ -74,12 +74,18 @@ function onMessageArrived(message) {
     
   const values = message.payloadString.split(',');
 
-  // Display Data
+  // Display Data Voltage Current Frequency
   if (values[0]=='data1'&&values[1]=='c1'){
     document.getElementById('box_frquency').value = values[2] || '';
     document.getElementById('box_voltage').value = values[3] || '';
     document.getElementById('box_current').value = values[4] || '';
   }
+
+  // Display Data Speed
+  // if (values[0].startsWith('setspeed:')) {
+  //   const speedValue = values[0].split(':')[1]; // Extract the value after 'setspeed:'
+  //   document.getElementById('box_set_speed').value = speedValue || '';
+  // }
 
   // if (values[0]=='L1'&&values[1]=='10L2'){
   //   document.getElementById('checkbox')= checked;
